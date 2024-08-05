@@ -1,0 +1,6 @@
+@VietnamTrafficPolice.WebApi_HostAddress = http://localhost:5237
+
+GET {{VietnamTrafficPolice.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

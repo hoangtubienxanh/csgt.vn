@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietnamTrafficPolice", "src\VietnamTrafficPolice\VietnamTrafficPolice.csproj", "{C214E0AD-6F4C-4EFE-B877-EE8A646C6679}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B323313-2532-4869-AE6B-93204BB11848}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietnamTrafficPolice.WebApi", "src\VietnamTrafficPolice.WebApi\VietnamTrafficPolice.WebApi.csproj", "{4FBE97FB-7DE7-4F57-90B6-E2BC7DFA8D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ringleader", "Ringleader\Ringleader\Ringleader.csproj", "{536A64C2-2F10-4DBA-BD07-5A65FD1E7D7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget.Ringleader", "nuget.Ringleader", "{984D5202-D493-4EB2-885C-8FA00C7ED29B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingleaderTests", "Ringleader\RingleaderTests\RingleaderTests.csproj", "{3029F18B-3AA2-4B27-BC9E-59451FD2EFE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C214E0AD-6F4C-4EFE-B877-EE8A646C6679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C214E0AD-6F4C-4EFE-B877-EE8A646C6679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C214E0AD-6F4C-4EFE-B877-EE8A646C6679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C214E0AD-6F4C-4EFE-B877-EE8A646C6679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBE97FB-7DE7-4F57-90B6-E2BC7DFA8D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBE97FB-7DE7-4F57-90B6-E2BC7DFA8D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBE97FB-7DE7-4F57-90B6-E2BC7DFA8D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBE97FB-7DE7-4F57-90B6-E2BC7DFA8D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{536A64C2-2F10-4DBA-BD07-5A65FD1E7D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536A64C2-2F10-4DBA-BD07-5A65FD1E7D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536A64C2-2F10-4DBA-BD07-5A65FD1E7D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536A64C2-2F10-4DBA-BD07-5A65FD1E7D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3029F18B-3AA2-4B27-BC9E-59451FD2EFE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3029F18B-3AA2-4B27-BC9E-59451FD2EFE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3029F18B-3AA2-4B27-BC9E-59451FD2EFE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3029F18B-3AA2-4B27-BC9E-59451FD2EFE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3029F18B-3AA2-4B27-BC9E-59451FD2EFE7} = {984D5202-D493-4EB2-885C-8FA00C7ED29B}
+		{536A64C2-2F10-4DBA-BD07-5A65FD1E7D7B} = {984D5202-D493-4EB2-885C-8FA00C7ED29B}
+	EndGlobalSection
+EndGlobal
