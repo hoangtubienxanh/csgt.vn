@@ -1,0 +1,3 @@
+﻿namespace VietnamTrafficPolice;
+
+public interface IProxifiedVietnamTrafficPoliceClient : IVietnamTrafficPoliceClient;

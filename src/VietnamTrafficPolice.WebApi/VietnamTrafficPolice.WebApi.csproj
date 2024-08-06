@@ -4,15 +4,45 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>670fefa0-c882-489a-a008-d0f80e43c31a</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" VersionOverride="9.0.0-preview.6.24328.4" />
-        <PackageReference Include="Scalar.AspNetCore" />
+        <PackageReference Include="Aspire.Pomelo.EntityFrameworkCore.MySql"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" VersionOverride="9.0.0-preview.6.24328.4"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Caching.Hybrid"/>
+        <PackageReference Include="Microsoft.Extensions.Http.Resilience"/>
+        <PackageReference Include="Pomelo.Extensions.Caching.MySql"/>
+        <PackageReference Include="Scalar.AspNetCore"/>
+        <PackageReference Include="System.Runtime.Caching"/>
+        <PackageReference Include="TesseractCSharp"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\VietnamTrafficPolice\VietnamTrafficPolice.csproj" />
+        <ProjectReference Include="..\VietnamTrafficPolice\VietnamTrafficPolice.csproj"/>
+        <ProjectReference Include="..\VietnamTrafficPolice.ServiceDefaults\VietnamTrafficPolice.ServiceDefaults.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="..\..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
+        <Content Include="..\..\Dockerfile">
+            <Link>Dockerfile</Link>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="tessdata\**" CopyToOutputDirectory="PreserveNewest"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Storage\SqlData\"/>
     </ItemGroup>
 
 </Project>

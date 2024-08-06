@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>BE2EDF52-61D5-433A-BE87-F26DEC63B11E</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.MySql"/>
+        <ProjectReference Include="..\..\Warp.Hosting\Warp.Hosting.csproj" IsAspireProjectResource="false"/>
+        <PackageReference Include="Aspire.Hosting.AppHost"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\VietnamTrafficPolice.WebApi\VietnamTrafficPolice.WebApi.csproj"/>
+    </ItemGroup>
+
+</Project>
